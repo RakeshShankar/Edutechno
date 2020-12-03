@@ -7,6 +7,7 @@
 html{
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #333;
 }
 
 a{    
@@ -14,9 +15,9 @@ a{
     color: #eee;
 }
 
-ul li{
+/* ul li{
     list-style: none;
-}
+} */
 
 img {
     width: 75px;
@@ -35,7 +36,7 @@ span{
 }
 
 .clear{
-    clear: top;
+    clear: both;
 }
 
 nav{
@@ -75,13 +76,13 @@ ul li a:hover{
     padding-left: 20px;
 }
 
-ul {
+/* ul {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     margin: 10px;
     text-transform: uppercase;
-}
+} */
 
 h1{
       color: rgb(241, 240, 241);
@@ -115,24 +116,217 @@ h1{
 
   .startlearningbutton:hover{
     border: 2px solid grey;
-    background-color: rgb(139, 0, 252);;
+    background-color: rgb(139, 0, 252);
     padding: 1rem;
     text-align: center;
     text-transform: uppercase;
 }
+
+.container-cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 30px;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
   
-  section{
-      margin-top: 0;
-      background-color: lawngreen;
-  }
+  
+}
+
+.container-cards .card{
+  position: relative;
+}
 
 
+.container-cards .card .face{
+ width: 250px;
+ height: 125px;
+ transition: 0.5s;
+ box-sizing: border-box;
+ box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+
+}
 
 
+.container-cards .card .face.face1{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(90px);
+ }
+
+ .container-cards .card:hover .face.face1{
+  transform: translateY(0);
+  background-color: rgb(139, 0, 252);
+
+ }
+
+ .container-cards .card .face.face1 .content{
+  opacity: 0.2;
+  transition: 0.5s;
+  
+}
+
+.container-cards .card:hover .face.face1 .content{
+  opacity: 0.8;  
+}
+
+.container-cards .card .face.face1 .content img{
+  max-width: 100px;
+  transition: width 2s, height 2s;
+}
+
+.container-cards .card:hover .face.face1 .content img{
+  max-width: 100px;
+  width: 90px;
+  height: 90px;
+}
+ 
+ .container-cards .card .face.face2{
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+  border-radius: 10px;
+  /* transform: translateX(-100px); */
+}
+
+.container-cards .card:hover .face.face2{
+  transform: translateY(0);
+}
+ 
+.container-cards .card .face.face2 .content p{
+  
+  background: #fff;
+  
+}
 
 
+.container-cards .card .face.face1 .content h3{
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  
+}
 
 
+.container-cards .card .face.face2 .content a{
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+
+.container-cards .card .face.face2 .content a:hover{
+  background: #333;
+}
+
+
+.features{
+  padding: 40px;
+  background:white;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+  background: url(../img/features.jpg) no-repeat center center/cover;
+}
+
+.features ul{
+  background: rgb(102, 213, 228);
+  margin-right: 650px;
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(26, 2, 160, 0.918);
+  padding: 10px;
+  background: linear-gradient(to bottom, rgba(116, 114, 231, 0.8), rgba(0,0,0,0.3))
+}
+
+.features h1{
+ 
+ color: rgb(0, 0, 0);
+ margin-bottom: 10px;
+ display: inline-block;
+ font-weight: 900;
+ border-bottom: 2px solid black;
+}
+
+
+.features ul li{
+  text-transform: uppercase;
+  position: relative;
+  list-style: none;
+  display: table;
+  margin: 10px 0;
+  padding-left: 34px;
+  padding-right: 5px;
+ 
+ }
+
+
+ .features ul li::before{
+   content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  background: transparent;
+  border-radius: 30px;
+  transition: background 0.5s, width 0.5s;
+  border: 2px solid rgb(139, 0, 252);
+  transition-delay: 0.3s, 0s;
+  background: rgb(149, 149, 231);
+  
+ }
+
+ .features ul li:hover::before{
+   width: 100%;
+   height: 100%;
+   background-color: rgb(139, 0, 252);
+   transition-delay: 0s, 0.3s;
+ }
+
+
+ .features ul li::after{
+  content: '';
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #333;
+  border-right: 2px solid #333;
+  transform: rotate(45deg);
+  transition: 0.5s;
+  transition-delay: 0s;
+ }
+
+ .features ul li:hover::after{
+   transition-delay: 0.5s;
+   transform: rotate(45deg) scale(1.5);
+   left: 24px;
+
+ }
+
+ .features ul li p{
+   position: relative;
+   z-index: 10;
+   padding: 5px 10px;
+   color:black;
+   font-weight: bold;
+ }
 
 
 
