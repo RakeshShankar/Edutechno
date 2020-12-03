@@ -115,7 +115,7 @@ h1{
 
   .startlearningbutton:hover{
     border: 2px solid grey;
-    background-color: green;
+    background-color: rgb(139, 0, 252);;
     padding: 1rem;
     text-align: center;
     text-transform: uppercase;
