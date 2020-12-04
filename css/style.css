@@ -131,7 +131,7 @@ h1{
 }
 
 
-@media(min-width:0px) and (max-width:500px){
+@media screen and (max-width:500px){
   h1{
     color: rgb(241, 240, 241);
     font-size: 1.5rem;
