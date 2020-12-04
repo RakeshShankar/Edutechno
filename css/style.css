@@ -400,34 +400,164 @@ h1{
 }
 
 .acti-cards{
-  
+ 
   display: flex;
 }
 
 .acti-content{
+  background: #ccc;
   border: 1px solid green;
   margin: 10px;
   text-align: center;
+  border-radius: 30px;
+  margin: 30px;
+  padding: 10px;
+  color: #ccc;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(to bottom, rgba(139, 98, 133, 0.8), rgba(208, 10, 248, 0.3));
+}
+
+.acti-content img{
+  border-radius: 50px;
+}
+
+/* 
+.faqs{
+  max-width: 700px;
+  margin:0 auto;
+}
+
+.faqs .questions{
+  box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);
+
+}
+
+.faqs h1{
+  padding: 4px 32px;
+  font-size: 28px;
 }
 
 
+.faqs .faq-header{
+  display: flex;
+  background: rgba(0, 0, 0, 0.3);
+  color: #ccc;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
 
 
+.faqs .faq-header .open, 
+.faqs .faq-header .close {
+  position: absolute;
+  right: 0;
+  padding: 0 32px;
+  font-size: 22px;
+  font-weight: bold;
+  transform: translateY(-8px);
+  opacity:0;
+  transition: all 500ms;
+}
+
+.faqs .faq-header .open.active, 
+.faqs .faq-header .close.active{
+  opacity:1;
+  transform: translateY(0);
+}
+
+.faqs .faq-header h3{
+  font-size: 20px;
+  padding: 0 32px;
+}
+
+.answer{
+  padding: 0 32px;
+  background: #ccc;
+  line-height: 2;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 500ms;
+}
+
+.faqs .content.active{
+  max-height: 600px;
+} */
+
+.box{
+  width: 80%;
+  margin: 300px auto;
+  background: rgb(238, 150, 150);
+  border-radius: 7px;
+  box-shadow: 0 25px 25px rgba(221, 77, 77, 0.8);
+  background: linear-gradient(to bottom, rgba(139, 98, 133, 0.8), rgba(208, 10, 248, 0.3));
+  
+}
+
+.box .heading{
+  /* background: #7800CF; */
+  border-radius: 7px 7px 0px 0px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.faq{
+  padding: 0 20px 20px;
+}
 
 
+::-webkit-details-marker{
+float: right;
+margin-top: 3px;
+}
+
+details{
+  padding:10px 20px;
+background: rgb(172, 30, 238);
+border-radius: 7px;
+margin-top: 20px;
+font-size: 1rem;
+letter-spacing: 1px;
+color: #ccc;
+font-weight: 900;
+text-transform: uppercase;
+margin-bottom: 30px;
+}
+
+details summary{
+  outline: none;
+}
+.faqbutton{
+border: 2px solid rgb(31, 30, 30);
+padding: 0.8rem;
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+margin-bottom: 300px;
+margin-left: 400px;
+}
 
 
+.faqbutton:hover{
+  border: 2px solid grey;
+  background-color: rgb(174, 164, 182);
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 
-
-
-
-
-
-
-
-
-
+.footer{
+  text-align: center;
+  background: rgb(66, 65, 65);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
 
 
 
