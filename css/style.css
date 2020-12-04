@@ -119,7 +119,7 @@ h1{
       text-align: center;
       text-transform: uppercase;
       font-weight: bold;
-      margin-left: 38rem;
+      margin-left: 33rem;
   }
 
   .startlearningbutton:hover{
@@ -143,6 +143,23 @@ h1{
     /* margin-bottom: 5rem; */
 }
 
+.startlearningbutton{
+  border: 1px solid grey;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 100px;
+}
+
+.startlearningbutton:hover{
+  border: 1px solid grey;
+  background-color: rgb(139, 0, 252);
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 }
 /* Main page ends */
 
@@ -162,6 +179,7 @@ h1{
 
 .container-cards .card{
   position: relative;
+  margin: 10px;
 }
 
 
@@ -260,6 +278,125 @@ h1{
 .container-cards .card .face.face2 .content a:hover{
   background: #333;
 }
+
+
+@media screen and (max-width:500px){
+
+  .container-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin: 80px;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    
+  }
+  
+  .container-cards .card{
+    position: relative;
+  }
+  
+  
+  .container-cards .card .face{
+   width: 250px;
+   height: 125px;
+   transition: 0.5s;
+   box-sizing: border-box;
+   box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+  
+  }
+  
+  
+  .container-cards .card .face.face1{
+      position: relative;
+      background: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      transform: translateY(90px);
+   }
+  
+   .container-cards .card:hover .face.face1{
+    transform: translateY(0);
+    background-color: rgb(139, 0, 252);
+  
+   }
+  
+   .container-cards .card .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+    
+  }
+  
+  .container-cards .card:hover .face.face1 .content{
+    opacity: 0.8;  
+  }
+  
+  .container-cards .card .face.face1 .content img{
+    max-width: 100px;
+    transition: width 2s, height 2s;
+  }
+  
+  .container-cards .card:hover .face.face1 .content img{
+    max-width: 100px;
+    width: 60px;
+    height: 60px;
+  }
+   
+   .container-cards .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    border-radius: 10px;
+    /* transform: translateX(-100px); */
+  }
+  
+  .container-cards .card:hover .face.face2{
+    transform: translateY(0);
+  }
+   
+  .container-cards .card .face.face2 .content p{
+    
+    background: #fff;
+    
+  }
+  
+  
+  .container-cards .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    
+  }
+  
+  
+  .container-cards .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+  }
+  
+  
+  .container-cards .card .face.face2 .content a:hover{
+    background: #333;
+  }
+
+}
 /* ADVANTAGES OF EDUTECHNO CLASSES section ends */
 
 /* FEATURES OF EDUTECHNNO section starts */
@@ -354,10 +491,102 @@ h1{
    color:black;
    font-weight: bold;
  }
+ @media screen and (max-width:500px) {
 
+  .features{
+    padding: 20px;
+    background:white;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+    background: url(../img/features.jpg) no-repeat center center/cover;
+  }
+  
+  .features ul{
+    background: rgb(102, 213, 228);
+    margin-right: 400px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(26, 2, 160, 0.918);
+    padding: 10px;
+    background: linear-gradient(to bottom, rgba(116, 114, 231, 0.8), rgba(0,0,0,0.3))
+  }
+  
+  .features h1{
+   
+   color: rgb(0, 0, 0);
+   margin-bottom: 10px;
+   display: inline-block;
+   font-weight: 600;
+   border-bottom: 2px solid black;
+  }
+  
+  
+  .features ul li{
+    text-transform: uppercase;
+    position: relative;
+    list-style: none;
+    display: table;
+    margin: 10px 0;
+    padding-left: 34px;
+    padding-right: 5px;
+   
+   }
+  
+  
+   .features ul li::before{
+     content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 34px;
+    background: transparent;
+    border-radius: 30px;
+    transition: background 0.5s, width 0.5s;
+    border: 2px solid rgb(139, 0, 252);
+    transition-delay: 0.3s, 0s;
+    background: rgb(149, 149, 231);
+    
+   }
+  
+   .features ul li:hover::before{
+     width: 100%;
+     height: 100%;
+     background-color: rgb(139, 0, 252);
+     transition-delay: 0s, 0.3s;
+   }
+  
+  
+   .features ul li::after{
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 12px;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    transform: rotate(45deg);
+    transition: 0.5s;
+    transition-delay: 0s;
+   }
+  
+   .features ul li:hover::after{
+     transition-delay: 0.5s;
+     transform: rotate(45deg) scale(1.5);
+     left: 24px;
+  
+   }
+  
+   .features ul li p{
+     position: relative;
+     z-index: 10;
+     padding: 5px 10px;
+     color:black;
+     font-weight: bold;
+   }
+ }
 /* FEATURES OF EDUTECHNNO section ends */
 
-/* ACTIVITES section starts */
+/* ACTIVITIES section starts */
 .testimonial-cards{
   background-color: rgb(177, 177, 233);
   display: flex;
@@ -412,6 +641,71 @@ h1{
 .acti-content img{
   border-radius: 50px;
 }
+
+
+@media screen and (max-width:500px) {
+
+.testimonial-cards{
+  background-color: rgb(177, 177, 233);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+/* .testi-cards{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;   
+} */
+
+.test-content{
+  padding:0;
+  margin: 10px;
+  background: rgb(207, 233, 166);
+  text-align: center;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(to bottom, rgba(207, 221, 181, 0.8), rgba(121, 187, 16, 0.3))
+}
+
+.test-content img{
+  margin-left: 50px;
+}
+
+.test-content h4{
+  margin:20px;
+}
+
+.divi2{
+  margin: 20px;
+  margin-top: 125px;
+  margin-bottom: 100px;
+}
+
+
+.acti-content{
+  background: #ccc;
+  border: 1px solid green;
+  margin: 10px;
+  text-align: center;
+  border-radius: 30px;
+  margin: 30px;
+  padding: 10px;
+  color: #ccc;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(to bottom, rgba(139, 98, 133, 0.8), rgba(208, 10, 248, 0.3));
+}
+
+.acti-content img{
+  border-radius: 50px;
+}
+
+
+}
+
+
+
 /* ACTIVITES section ends */
 
 /* FREQUENTLY ASKED QUESTION'S starts */
@@ -476,6 +770,92 @@ margin-left: 400px;
   text-align: center;
   text-transform: uppercase;
 }
+
+
+
+
+@media screen and (max-width:500px) {
+
+
+.box{
+  width: 80%;
+  margin: 300px auto;
+  background: rgb(238, 150, 150);
+  border-radius: 7px;
+  box-shadow: 0 25px 25px rgba(221, 77, 77, 0.8);
+  background: linear-gradient(to bottom, rgba(139, 98, 133, 0.8), rgba(208, 10, 248, 0.3));
+  
+}
+
+.box .heading{
+  border-radius: 7px 7px 0px 0px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.faq{
+  padding: 0 20px 20px;
+}
+
+
+::-webkit-details-marker{
+float: right;
+margin-top: 3px;
+}
+
+details{
+padding:10px 20px;
+background: rgb(172, 30, 238);
+border-radius: 7px;
+margin-top: 0;
+font-size: 1rem;
+letter-spacing: 1px;
+color: #ccc;
+font-weight: 900;
+text-transform: uppercase;
+margin-bottom: 30px;
+}
+
+details summary{
+  outline: none;
+}
+
+
+.faqbutton{
+border: 0px solid rgb(31, 30, 30);
+padding-left: 15px;
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+/* margin-bottom: 300px;
+margin-left: 600px; */
+padding: 15px;
+right: 0;
+}
+
+
+.faqbutton:hover{
+  border: 0px solid grey;
+  background-color: rgb(174, 164, 182);
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 /* FREQUENTLY ASKED QUESTION'S ends */
 
 /* Footer starts */
