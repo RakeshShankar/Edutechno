@@ -129,6 +129,21 @@ h1{
     text-align: center;
     text-transform: uppercase;
 }
+
+
+@media(min-width:0px) and (max-width:500px){
+  h1{
+    color: rgb(241, 240, 241);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    /* line-height: 5rem; */
+    /* margin-top: 10rem; */
+    opacity: 0.8;
+    /* margin-bottom: 5rem; */
+}
+
+}
 /* Main page ends */
 
 /* ADVANTAGES OF EDUTECHNO CLASSES section starts */
