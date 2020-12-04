@@ -119,7 +119,7 @@ h1{
       text-align: center;
       text-transform: uppercase;
       font-weight: bold;
-      margin-left: 33rem;
+      margin-left: 34rem;
   }
 
   .startlearningbutton:hover{
@@ -161,6 +161,64 @@ h1{
 }
 
 }
+@media (min-width:500px) and (max-width:768px){
+  .startlearningbutton{
+    border: 1px solid grey;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 300px;
+  }
+  
+  .startlearningbutton:hover{
+    border: 1px solid grey;
+    background-color: rgb(138, 24, 231);
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+/* @media (min-width:768px) and (max-width:1024px){
+.startlearningbutton{
+  border: 1px solid grey;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 300px;
+}
+
+.startlearningbutton:hover{
+  border: 1px solid grey;
+  background-color: rgb(138, 24, 231);
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+}
+
+
+@media (min-width:1024px) and (max-width:1366px){
+  .startlearningbutton{
+    border: 1px solid grey;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 400px;
+  }
+  
+  .startlearningbutton:hover{
+    border: 1px solid grey;
+    background-color: rgb(138, 24, 231);
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+} */
 /* Main page ends */
 
 /* ADVANTAGES OF EDUTECHNO CLASSES section starts */
@@ -394,6 +452,39 @@ h1{
   
   .container-cards .card .face.face2 .content a:hover{
     background: #333;
+  }
+
+}
+
+
+@media (min-width:500px) and (max-width:768px){
+  .container-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin: 80px;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    
+  }
+}
+
+
+@media (min-width:768) and (max-width:1200px){
+  .container-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin: 80px;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    
   }
 
 }
@@ -846,15 +937,7 @@ right: 0;
 
 }
 
-
-
-
-
-
-
-
-
-
+}
 
 /* FREQUENTLY ASKED QUESTION'S ends */
 
@@ -930,8 +1013,23 @@ span.psw {
 }
 /* Login form ends */
 
+/* Loaders  */
+ .loaders {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	/* z-index: 10000; */
+}
 
+.loaders .inners {
+	width: 100%;
+	height: 100%;
+	background: url(../img/preloader.gif) no-repeat center center/cover ;
 
+} 
 
 
 
